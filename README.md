@@ -10,9 +10,11 @@ final_project-Ting-YuChou created by GitHub Classroom
 3. 可得到 L=1/2*4*pi*R=2*pi*R 與我們原先知道的弧長相同
 
 #General way
-1. crofton formula這個公式在計算一般的曲線時較難去分case討論在theta和p的範圍內有幾個交點，所以我們將公式近似成 L=1/2*sigma n(theta(i),p(i))*delta(theta(i))*delta(p(i)) 從i開始  
+1. crofton formula這個公式在計算一般的曲線時較難去分case討論在theta和p的範圍內有幾個交點，所以我們將公式近似成 L=1/2*sigma n(theta(i),p(i))*delta(theta(i))*delta(p(i))   
  注意到delta(p(i))=delta(p), delta(theta(i))=delta(theta) 所以我們可以寫成 L=1/2*(sum of intersection points)*delta(theta)*delta(p)
 2. 所以我以圓為範本，將半圓180度切成180份計算當p從0到R切99份的線與圓的交點個數乘以2，p=0的線單獨計算 theta=0上的線也單獨計算，最後總和的點即為總交點個數
+3. 我用極座標來找出直線方程式，再與圓聯立並利用root finding找出解的個數
+
 
 
 
