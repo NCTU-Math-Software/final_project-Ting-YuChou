@@ -51,7 +51,7 @@ function crofton_formula(R)
         end
     end
     
-    n=n+360+98*2*2;
+    n=n+360+98*2*2;     %加上切線及theta=0的線與元的交點
     disp(n)             %total number of points
     
     function y=f(x)
