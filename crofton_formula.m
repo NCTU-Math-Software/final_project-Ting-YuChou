@@ -55,7 +55,7 @@ function crofton_formula(R)
     n=n+360+98*2*2;     %加上切線及theta=0的線與元的交點
     disp(['total points=',num2str(n)])            %total number of points
     
-    function y=f(x).    %解交點的方程式
+    function y=f(x)    %解交點的方程式
         y=(1+(xp/yp)^2)*x^2-(2*xp*c/(yp^2))*x+(c/yp)^2-R^2;
     end
     
