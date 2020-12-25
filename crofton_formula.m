@@ -33,6 +33,7 @@ function crofton_formula(R)
     
     n=n*2;
     
+    %count when p=0
     for ii=2:90
         k=sin(theta(ii))/cos(theta(ii));
         for kk=1:10^4
