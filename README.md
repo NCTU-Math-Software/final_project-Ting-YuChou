@@ -1,4 +1,5 @@
-# final_project 13-Ting-YuChou
+# Crofton Formula-Ting-YuChou
+給定一條二維的曲線, 以 Crofton formula 求出其曲線長度
 final_project-Ting-YuChou created by GitHub Classroom
 ## Main purpose of the project 
 試用crofton formula找出圓的弧長，並從公式延伸出較general的方法來估算curve length
