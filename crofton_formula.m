@@ -7,7 +7,7 @@ function crofton_formula(R)
     %crofton formula
     fun= @(x,y) 2+zeros(size(x));
     Len=1/2*integral2(fun,0,2*pi,0,R);
-    disp(Len)
+    disp(['curve length=',num2str(Len)])
 
     
     %general way of approximation
@@ -52,7 +52,7 @@ function crofton_formula(R)
     end
     
     n=n+360+98*2*2;     %加上切線及theta=0的線與元的交點
-    disp(n)             %total number of points
+    disp(['total points=',num2str(n)])            %total number of points
     
     function y=f(x).    %解交點的方程式
         y=(1+(xp/yp)^2)*x^2-(2*xp*c/(yp^2))*x+(c/yp)^2-R^2;
@@ -64,6 +64,6 @@ function crofton_formula(R)
     end
 
     curve_length=1/2*n*pi/180*R/99;
-    disp(curve_length)
+   disp(['modified curve length=',num2str(curve_length)])
 
 end
